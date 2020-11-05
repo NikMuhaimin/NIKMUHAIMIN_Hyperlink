@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>WEBSITE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color:  #EBF5FB;
+  color: black;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+	<header>
+  		<h2>My First Website</h2>
+	</header>
+
+	<section>
+  		<nav>
+    		    <ul>
+      			<li><a href="HOMEPAGE.html" target="_blank">HOMEPAGE</a></li>
+     			  <li><a href="BIODATA.html" target="_blank">BIODATA</a></li>
+      			<li><a href="GALLERY.Html" target="_blank">GALLERY</a></li>
+    		    </ul>
+  		</nav>
+  
+	<article>
+    		<p style="font-size:150%;"><font color="black"><i>
+			My first path to go through this subject where I personally think that it's quiet complicated but still, if you explore more, you will learn more.
+		</i></font></p>
+    		<p style="font-size:150%;"><font color="black"><i>
+			To be honest when you explore this subject, you might find difficulties, but trust me if you slowly try to understand the meaning of this subject and try to do it in your own,
+			you be able to create something to yourself
+		</i></font></p>
+	
+	</section>
+
+
+
+</body>
+</html>
